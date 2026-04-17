@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Form | Career Path Recommender</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="form">
+  <div class="aurora aurora-one"></div>
+  <div class="aurora aurora-two"></div>
+  <header class="subpage-header container">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">CP</span>
+      <div>
+        <strong>Career Path Recommender</strong>
+        <span>Smart discovery form</span>
+      </div>
+    </a>
+    <div class="header-actions">
+      <div class="step-pill">Step 1 / 5</div>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <span class="theme-icon">☾</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container page-shell">
+    <section class="glass-card page-intro reveal">
+      <span class="eyebrow">Your starting point</span>
+      <h1>Tell us how you like to learn and work</h1>
+      <p>
+        This form creates a student profile that powers your recommendation engine, personalized roadmap,
+        dashboard, and mentor guidance.
+      </p>
+    </section>
+
+    <section class="glass-card form-card reveal">
+      <div class="progress-block">
+        <div class="progress-copy">
+          <strong>Career Journey Progress</strong>
+          <span>We use this information to recommend your best-fit paths.</span>
+        </div>
+        <div class="progress-bar">
+          <span style="width:20%"></span>
+        </div>
+      </div>
+
+      <form id="career-form" class="career-form">
+        <label class="field">
+          <span>Name</span>
+          <input type="text" name="name" placeholder="Enter your name" required>
+        </label>
+
+        <div class="field">
+          <span>Select your interests</span>
+          <div id="interests-options" class="choice-grid"></div>
+        </div>
+
+        <div class="field">
+          <span>Select your current skills</span>
+          <div id="skills-options" class="choice-grid"></div>
+        </div>
+
+        <div class="field">
+          <span>Your preferred work style</span>
+          <div id="workstyle-options" class="choice-grid compact"></div>
+        </div>
+
+        <div class="field">
+          <span>Priority filter</span>
+          <div id="filter-options" class="choice-grid compact"></div>
+        </div>
+
+        <button class="button primary wide" type="submit">Analyze My Career Path</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
