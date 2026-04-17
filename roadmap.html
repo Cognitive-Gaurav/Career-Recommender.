@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Roadmap | Career Path Recommender</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="roadmap">
+  <div class="aurora aurora-one"></div>
+  <div class="aurora aurora-two"></div>
+  <header class="subpage-header container">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">CP</span>
+      <div>
+        <strong>Career Path Recommender</strong>
+        <span>Roadmap generator</span>
+      </div>
+    </a>
+    <div class="header-actions">
+      <div class="step-pill">Step 4 / 5</div>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <span class="theme-icon">☾</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container page-shell">
+    <section class="glass-card page-intro reveal">
+      <span class="eyebrow">Dynamic roadmap</span>
+      <h1 id="roadmap-title">Your career roadmap</h1>
+      <p id="roadmap-description"></p>
+    </section>
+
+    <section class="glass-card timeline-card reveal">
+      <div class="timeline-header">
+        <div>
+          <span class="eyebrow">Timeline</span>
+          <h2>Step-by-step growth path</h2>
+        </div>
+        <div id="roadmap-duration" class="duration-badge"></div>
+      </div>
+      <div id="roadmap-timeline" class="roadmap-timeline"></div>
+    </section>
+
+    <section class="glass-card reveal">
+      <div class="cta-banner">
+        <div>
+          <span class="eyebrow">Next step</span>
+          <h2>Move from planning to action</h2>
+          <p>Explore curated learning and job platforms relevant to your chosen career path.</p>
+        </div>
+        <a class="button primary" href="resources.html">Explore Resources</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

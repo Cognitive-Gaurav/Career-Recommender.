@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results | Career Path Recommender</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="results">
+  <div class="aurora aurora-one"></div>
+  <div class="aurora aurora-two"></div>
+  <header class="subpage-header container">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">CP</span>
+      <div>
+        <strong>Career Path Recommender</strong>
+        <span>Recommendation dashboard</span>
+      </div>
+    </a>
+    <div class="header-actions">
+      <div class="step-pill">Step 3 / 5</div>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <span class="theme-icon">☾</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container page-shell">
+    <section class="dashboard-grid">
+      <article class="glass-card dashboard-profile reveal">
+        <span class="eyebrow">Student dashboard</span>
+        <h1 id="student-name">Career Match Overview</h1>
+        <div id="student-summary" class="summary-stack"></div>
+        <div class="progress-block">
+          <div class="progress-copy">
+            <strong>Journey completion</strong>
+            <span>Recommendation stage complete.</span>
+          </div>
+          <div class="progress-bar">
+            <span style="width:60%"></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="glass-card filter-panel reveal">
+        <span class="eyebrow">Career filters</span>
+        <h2>Refine your outcomes</h2>
+        <div id="result-filters" class="filter-chips"></div>
+        <p class="subtle">Top 3 careers always stay meaningful using the scoring engine and fallback matching.</p>
+      </article>
+    </section>
+
+    <section class="section reveal">
+      <div class="section-heading">
+        <span class="eyebrow">Top matches</span>
+        <h2>Your best-fit career paths</h2>
+      </div>
+      <div id="results-grid" class="results-grid"></div>
+    </section>
+
+    <section class="insight-grid reveal">
+      <article class="glass-card insight-card">
+        <span class="eyebrow">Why this suits you</span>
+        <div id="suitability-content"></div>
+      </article>
+      <article class="glass-card insight-card">
+        <span class="eyebrow">Skills to improve</span>
+        <div id="improvement-content"></div>
+      </article>
+    </section>
+
+    <section id="government-section" class="glass-card government-panel reveal hidden">
+      <span class="eyebrow">Government career awareness</span>
+      <h2>Structured options to explore</h2>
+      <div class="gov-grid">
+        <div><strong>SSC</strong><span>Graduate level competitive exams for stable central roles.</span></div>
+        <div><strong>Banking</strong><span>Clerk and PO pathways focused on aptitude, reasoning, and accuracy.</span></div>
+        <div><strong>Railway</strong><span>Recruitment tracks with broad eligibility and regional accessibility.</span></div>
+        <div><strong>UPSC</strong><span>Long-term preparation path for public service leadership awareness.</span></div>
+      </div>
+    </section>
+
+    <section class="chat-layout reveal">
+      <article class="glass-card chat-card">
+        <div class="chat-head">
+          <div>
+            <span class="eyebrow">PARICHIT</span>
+            <h2>Your personal mentor chatbot</h2>
+          </div>
+          <span class="status-live">Online</span>
+        </div>
+        <div id="chat-messages" class="chat-messages"></div>
+        <form id="chat-form" class="chat-form">
+          <input id="chat-input" type="text" placeholder="Ask about careers, coding, consistency, SSC, motivation..." required>
+          <button class="button primary" type="submit">Ask</button>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
